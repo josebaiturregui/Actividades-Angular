@@ -17,7 +17,7 @@ import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
 import { MatSidenavModule} from '@angular/material/sidenav';
-import { FormsModule} from '@angular/forms';
+
 import { MatSelectModule} from '@angular/material/select';
 import { MatListModule} from '@angular/material/list';
 import { MenuComponent } from './components/menu/menu.component';
