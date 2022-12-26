@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
+
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { MatButtonToggleModule} from '@angular/material/button-toggle';
@@ -14,11 +13,11 @@ import { MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatSliderModule} from '@angular/material/slider';
 import { MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { MatToolbarModule} from '@angular/material/toolbar';
+
 import { MatIconModule} from '@angular/material/icon';
 import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatToolbarModule} from '@angular/material/toolbar';
 
-import { MatSelectModule} from '@angular/material/select';
 import { MatListModule} from '@angular/material/list';
 import { MenuComponent } from './components/menu/menu.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -33,7 +32,7 @@ import { CurriculumVitaeComponent } from './pages/curriculum-vitae/curriculum-vi
   declarations: [
   
     AppComponent,
-    SidenavComponent,
+    
     MenuComponent,
     FooterComponent,
     HomeComponent,
