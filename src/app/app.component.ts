@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = "Joseba's CV";
+  title = "Joseba_cv_app";
   opened=false;
 }
