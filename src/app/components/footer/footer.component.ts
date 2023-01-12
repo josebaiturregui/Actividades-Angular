@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface linkFooter{
+  titulo: string;
+  icon:string;
+  url:string;
+}
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  datosMenuFooter:any[] = [
+  datosMenuFooter: linkFooter[] = [
     {
       'titulo':'Github',
       'icon':'bi bi-github',
