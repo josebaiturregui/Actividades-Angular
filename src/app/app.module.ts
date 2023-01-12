@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { MatButtonToggleModule} from '@angular/material/button-toggle';
@@ -17,13 +18,17 @@ import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatIconModule} from '@angular/material/icon';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatToolbarModule} from '@angular/material/toolbar';
-
+import { FormsModule } from '@angular/forms';
 import { MatListModule} from '@angular/material/list';
 import { MenuComponent } from './components/menu/menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FormularioComponent } from './pages/formulario/formulario.component';
 import { CurriculumVitaeComponent } from './pages/curriculum-vitae/curriculum-vitae.component';
+import { HoverStyleDirective } from './directives/hover-style.directive';
+import { RequiredInfoDirective } from './directives/required-info.directive';
+
       
 
 
@@ -32,12 +37,16 @@ import { CurriculumVitaeComponent } from './pages/curriculum-vitae/curriculum-vi
   declarations: [
   
     AppComponent,
-    
     MenuComponent,
     FooterComponent,
     HomeComponent,
     ContactComponent,
     CurriculumVitaeComponent,
+    HoverStyleDirective,
+    RequiredInfoDirective,
+    FormularioComponent
+    
+    
    
     
     
@@ -62,7 +71,9 @@ import { CurriculumVitaeComponent } from './pages/curriculum-vitae/curriculum-vi
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    FormsModule
+    
 
     
   ],

@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
+
+interface linkMenu{
+  titulo: string;
+  icon:string;
+  routerLink:string;
+}
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -8,23 +15,29 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
   
   opened=false;
-  itemsMenu: any[] = [
+  itemsMenu: linkMenu[] = [
     {
       'titulo':'Home',
      'icon':'bi bi-house',
      'routerLink':''
     },
     {
-     'titulo':'CV',
+     'titulo':'Curriculo',
      'icon':'bi bi-file-text',
      'routerLink':'/cv'
     },
     {
-     'titulo':'Contact',
-     'icon':'bi bi-clipboard',
+     'titulo':'Contacto',
+     'icon':'bi bi-clipboard2-check',
      'routerLink':'/contact',
      
-    }
+    },
+    {
+      'titulo':'Formulario',
+      'icon':'bi bi-arrow-up-right-square',
+      'routerLink':'/formulario',
+      
+     }
   ];
 
   showIcon:boolean = true;
